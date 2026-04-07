@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,400;0,6..72,700;1,6..72,200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#e9c349",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4d4635",
+                    "primary-fixed": "#ffe088",
+                    "tertiary": "#bfcdff",
+                    "on-primary-fixed": "#241a00",
+                    "surface-container-lowest": "#0e0e0e",
+                    "inverse-on-surface": "#313030",
+                    "on-tertiary": "#082b72",
+                    "inverse-surface": "#e5e2e1",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary": "#303030",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed-variant": "#574500",
+                    "primary": "#f2ca50",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "on-background": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "secondary": "#c8c6c6",
+                    "surface-container-low": "#1c1b1b",
+                    "secondary-fixed": "#e4e2e1",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "surface-dim": "#131313",
+                    "surface-bright": "#3a3939",
+                    "on-primary-container": "#554300",
+                    "surface": "#131313",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "tertiary-fixed": "#dbe1ff",
+                    "surface-container-highest": "#353534",
+                    "tertiary-container": "#97b0ff",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-surface-variant": "#d0c5af",
+                    "outline": "#99907c",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "surface-variant": "#353534",
+                    "surface-container": "#201f1f",
+                    "secondary-container": "#474747",
+                    "on-primary": "#3c2f00",
+                    "on-secondary-container": "#b6b5b4",
+                    "on-tertiary-container": "#254188",
+                    "background": "#131313",
+                    "primary-container": "#d4af37",
+                    "inverse-primary": "#735c00",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-surface": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-display {
+            font-family: 'Newsreader', serif;
+        }
+        .text-shadow-glow {
+            text-shadow: 0 0 15px rgba(242, 202, 80, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 bg-[#131313]/60 backdrop-blur-xl z-50">
+<div class="text-2xl font-serif text-[#f2ca50] tracking-tighter">Amor Fati</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="font-serif text-[#f2ca50] uppercase tracking-widest text-sm font-bold border-b border-[#f2ca50] pb-1" href="#">Collections</a>
+<a class="font-serif text-[#e5e2e1] uppercase tracking-widest text-sm hover:text-[#f2ca50] transition-all duration-400 ease-in-out" href="#">Store</a>
+</nav>
+<div class="flex items-center gap-6 text-[#f2ca50]">
+<button class="scale-100 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden scale-100 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-12 mb-24 text-center">
+<h1 class="serif-display text-6xl md:text-8xl font-light tracking-tight mb-6 italic text-shadow-glow">Amor Fati the Eternal Return</h1>
+<p class="font-body text-sm uppercase tracking-[0.4em] text-on-surface-variant max-w-2xl mx-auto opacity-70">A curation of temporal endurance. Designed for the sovereign individual.</p>
+</section>
+<!-- Collections Filter / Visions -->
+<section class="px-12 mb-16 flex justify-center">
+<div class="flex gap-4 border-b border-outline-variant/20 pb-4 w-full justify-center">
+<button class="font-body text-[10px] uppercase tracking-[0.2em] px-6 py-2 bg-primary-container text-on-primary-container">All Visions</button>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] px-6 py-2 hover:bg-surface-container-highest transition-colors text-on-surface-variant">Stoic Modernism</button>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] px-6 py-2 hover:bg-surface-container-highest transition-colors text-on-surface-variant">The Abyss</button>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] px-6 py-2 hover:bg-surface-container-highest transition-colors text-on-surface-variant">Sovereign State</button>
+</div>
+</section>
+<!-- Product Grid (Asymmetric/Editorial) -->
+<section class="px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<!-- Product 1: The Ubermensch Hoodie -->
+<div class="md:col-span-7 group">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="The Ubermensch Hoodie" class="w-full aspect-[4/5] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="dramatic portrait of a man in a structured heavy black hoodie standing in a dimly lit stone library with shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClAeF5mjiwScE7j2_uodtULI2FfuM-kQ2xtFhnNQ6MZaap1LBBaIwqlud0rzyfTvcu62ulKiWnpbZ7TJ1EtEUC1q_RnTqezarIVUI-rviC76c2Yiaa5J2gdGU58j4oeU5gWaAFIighCSrCPDCGxzuelGAWjM-3PqfLLDNPMHxRgik8sJ1i8FmakTkgJDZ9JTPr5tztyx7biCtGAYYI2SCn6F1kZhXKt1R3dqzsDebKEolvt7E_UKdPt7Ox7XfthrBbc6v91iAyhsw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div>
+<span class="font-body text-[10px] uppercase tracking-[0.3em] text-primary mb-2 block">Exhibit No. 001</span>
+<h3 class="serif-display text-3xl font-light">The Ubermensch Hoodie</h3>
+</div>
+<div class="text-right">
+<p class="serif-display text-xl text-on-surface mb-2">$420</p>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] border-b border-primary text-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors">Acquire</button>
+</div>
+</div>
+</div>
+<!-- Product 2: The Eternal T-Shirt -->
+<div class="md:col-span-5 pt-0 md:pt-32 group">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="The Eternal T-Shirt" class="w-full aspect-[3/4] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="minimalist black t-shirt draped over an ancient marble bust in a dark gallery with high contrast side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6bB0_86nFLkHKnbCgyfZImR8vqi9uB4wJUV6HdTUKL-7j7vLs0DI1xPLUw9UVkyPjSQrmJF9Q64DhLcwxGs6SHZQMihNvvSmb82XX-WMj-RlOP_X0LaH9PCloR_0f07bRC4rqwMs0X9WnR2N2HxDdLSRJGhVKOll1OcfbvxyFyk4q788JPncItUtiMWuM_HXiz_CZtBA2EQWNsZqO4Wn2L_YH-jT1creRjl3AF1xd-nFr3Fc4JgdOTUbk9UiiQnXrm4G1GGNkDfM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div>
+<span class="font-body text-[10px] uppercase tracking-[0.3em] text-primary mb-2 block">Exhibit No. 002</span>
+<h3 class="serif-display text-3xl font-light">The Eternal T-Shirt</h3>
+</div>
+<div class="text-right">
+<p class="serif-display text-xl text-on-surface mb-2">$210</p>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] border-b border-primary text-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors">Acquire</button>
+</div>
+</div>
+</div>
+<!-- Product 3: The Sovereign Jacket -->
+<div class="md:col-span-5 group">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="The Sovereign Jacket" class="w-full aspect-[3/4] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="sharp tailored dark wool jacket hanging in a gothic archway with moody atmospheric fog and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEIf3o10YGlF8gowojY0O-MhvvbhddC8tB_2Dmvp2ubOnQfb60BDUtnUoeMTPS2HTrvqxE6Q3dNtSSCVNLswe9czIfvhgqTynuAQ6LuIsf67ANQBOOqhw87GtaVjKsyoIg32K2ZIyH9KR3yNHXJKbCkY87hk-j8KsANciYvMzews155ntQvv2fUHYQYA6ROCkT83wn9Ar4FD8JlwMYLzGTY8ADPO0sXlYJ_3tE-L3fg_G3nBC1PaxCsWlx0Bkhc0g8BYQIFtZkqx4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div>
+<span class="font-body text-[10px] uppercase tracking-[0.3em] text-primary mb-2 block">Exhibit No. 003</span>
+<h3 class="serif-display text-3xl font-light">The Sovereign Jacket</h3>
+</div>
+<div class="text-right">
+<p class="serif-display text-xl text-on-surface mb-2">$850</p>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] border-b border-primary text-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors">Acquire</button>
+</div>
+</div>
+</div>
+<!-- Product 4: The Dialectic Polo -->
+<div class="md:col-span-7 group">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="The Dialectic Polo" class="w-full aspect-[4/5] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="close-up of a dark textured knit polo collar resting against a weathered sandstone wall in shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbd8v8ITBBpS1-lRkb5ToiipW4cKpOi3geGodNe7Uqnh5NNlYBJ0DkW1eN0lbafqyEV58YhRH2-yFL3dsf5QdEFzZfv-edh4tVvMXYJMam-4_WbhSZfu3ZNXZ_kbhPYWT4p5pkFCj35KKOVCQbxySwwSdZSDf9xFTgM_yHhLWe2ydVcjsynL2jXKHmqM2KVB4Jsoh0dA17yCBFpa0isiL2q_deytdJLMGw3csr4avA0HdUNLonow0kVbLesR3lmE2fuBcO1jTKRE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div>
+<span class="font-body text-[10px] uppercase tracking-[0.3em] text-primary mb-2 block">Exhibit No. 004</span>
+<h3 class="serif-display text-3xl font-light">The Dialectic Polo</h3>
+</div>
+<div class="text-right">
+<p class="serif-display text-xl text-on-surface mb-2">$280</p>
+<button class="font-body text-[10px] uppercase tracking-[0.2em] border-b border-primary text-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors">Acquire</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophic Quote Interruption -->
+<section class="py-48 px-12 text-center bg-surface-container-lowest my-24">
+<div class="max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-primary text-4xl mb-8" data-icon="auto_awesome">auto_awesome</span>
+<blockquote class="serif-display text-4xl md:text-5xl italic font-extralight leading-relaxed mb-12">
+                    "My formula for greatness in a human being is amor fati: that one wants nothing to be different, not forward, not backward, not in all eternity."
+                </blockquote>
+<cite class="font-body text-[10px] uppercase tracking-[0.5em] text-on-surface-variant">— Friedrich Nietzsche</cite>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 flex flex-col items-center gap-8 bg-[#131313] border-t border-[#353534]/10">
+<div class="flex gap-12 mb-8">
+<a class="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e5e2e1]/40 hover:text-[#f2ca50] transition-colors" href="#">Terms of Existence</a>
+<a class="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e5e2e1]/40 hover:text-[#f2ca50] transition-colors" href="#">Privacy of the Void</a>
+<a class="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e5e2e1]/40 hover:text-[#f2ca50] transition-colors" href="#">Contact the Curator</a>
+</div>
+<div class="text-[#f2ca50] flex gap-8">
+<span class="material-symbols-outlined hover:scale-110 transition-transform cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined hover:scale-110 transition-transform cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined hover:scale-110 transition-transform cursor-pointer" data-icon="fingerprint">fingerprint</span>
+</div>
+<div class="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e5e2e1]/40 mt-8">
+            © MMXIV AMOR FATI - THE ETERNAL RETURN
+        </div>
+</footer>
+</body></html>
